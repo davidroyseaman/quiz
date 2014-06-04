@@ -1,0 +1,23 @@
+{
+  "name": "quiz",
+  "version": "0.0.0",
+  "description": "quiz ====",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/ctrldavid/quiz.git"
+  },
+  "author": "",
+  "license": "BSD-2-Clause",
+  "bugs": {
+    "url": "https://github.com/ctrldavid/quiz/issues"
+  },
+  "homepage": "https://github.com/ctrldavid/quiz",
+  "dependencies": {
+    "node-uuid": "~1.4.1",
+    "redis": "~0.10.1"
+  }
+}

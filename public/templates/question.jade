@@ -1,0 +1,9 @@
+.question
+  .flex-row
+    //- .item.huge Q
+    .item.flex-column(title=model.get('id'))
+      textarea.item.text.js-text(type='text', placeholder='question text here', rows='3')= model.get('text')
+      .item.flex-row.js-answers
+        - for answer in model.get('answers')
+          input.item.answer.js-answer(type='text', value=answer)
+        .item.new-answer.js-new-answer +
