@@ -20,9 +20,11 @@ define [
       @send 'quiz', 'newgame', gameObj
 
     getGames: ->
+      console.time 'gg'
       @send 'quiz', 'getgamelist'
       new Promise (resolve, reject) =>
-        @once 'games', (games) ->        
+        @once 'games', (games) ->
+          console.timeEnd 'gg'
           resolve games
 
   return {QuizController}
